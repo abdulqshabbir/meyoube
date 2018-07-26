@@ -7,34 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- Materialize libarry -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    
     <!-- Font Awesome library-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <!-- CSS reset file -->
     <link rel="stylesheet" href="./assets/css/reset.css">
+    
+    <!-- Google fonts: Montserrat-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet"> 
+    
     <!-- main.css file-->
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
-
 </head>
 <body>
     <div class="container">
         <h1 class="title">MeYouBe</h1>
         <div class="row">
                 <button id="login" class="col s12 button btn-small deep-purple" id="login_button">
-                    Login now
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                    Login
                 </button>
         </div>
         <div class="row">
                 <a class="button btn-small col s12 social facebook facebook_button">
                     <i class="fa fa-facebook"></i>
-                    Sign up with facebook
+                    Facebook Signup
                     <fb:login-button scope="public_profile,email" id="facebook_signin" onlogin="checkLoginState();"></fb:login-button>
                     <!--<button id="facebook_signin">Facebook</button>-->
                 </a>
         </div>
         <div class="row">
                 <a class="button btn-small col s12 social github email_button" id="email_signin">
-                    Sign up with Email
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    Email Signup
                 </a>
         </div>
     <script src="./assets/js/facebook.js"></script>
