@@ -58,7 +58,7 @@
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 
@@ -72,3 +72,17 @@
         'Thanks for logging in, ' + response.name + '!';
     });
   }
+document.getElementById("facebook_button").addEventListener("click",function(){
+
+  FB.login(function(response) {
+		if (response.authResponse) {
+			//user just authorized your app
+			FB.api('/me', function(response) {
+        console.log(response);
+      });
+			
+		}
+	}, {scope: 'email,public_profile', return_scopes: true});
+
+
+})
