@@ -4,7 +4,7 @@
   "description": "Meet friends with ease!",
   "main": "index.js",
   "scripts": {
-    "lite": "lite-server --port 3000", 
+    "lite": "lite-server --port 3000",
     "start": "npm run lite"
   },
   "repository": {
