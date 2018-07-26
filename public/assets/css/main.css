@@ -38,3 +38,7 @@
     --github-bg-color: #444444 !important; 
     background-color: var(--github-bg-color); 
 }
+
+#login_button {
+    margin-bottom: 20px; 
+}
