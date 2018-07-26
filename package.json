@@ -1,0 +1,22 @@
+{
+  "name": "meyoube",
+  "version": "1.0.0",
+  "description": "Meet friends with ease!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdulqshabbir/meyoube.git"
+  },
+  "author": "Sang Lee and Abdul Shabbir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdulqshabbir/meyoube/issues"
+  },
+  "homepage": "https://github.com/abdulqshabbir/meyoube#readme",
+  "dependencies": {
+    "materialize-social": "^1.0.3"
+  }
+}

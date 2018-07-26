@@ -1,3 +1,40 @@
-body {
-    background-color: blue; 
+.title {
+    font-weight: 300;
+}
+
+.container {
+    max-width: 200px;
+    margin-top: 10%;
+    font-family: "Segoe UI"; 
+}
+
+.row {
+    margin: 0; 
+    padding: 0; 
+}
+
+.button {
+    font-size: 10px;
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+}
+
+.facebook_button {
+    --facebook-bg-color: #3b5998; 
+    background-color: var(--facebook-bg-color); 
+    
+}
+.facebook_button:hover {
+    --facebook-bg-color: #3b5998; 
+    background-color: var(--facebook-bg-color); 
+}
+
+.email_button {
+    --github-bg-color: #444444 !important; 
+    background-color: var(--github-bg-color); 
+}
+
+.email_button:hover {
+    --github-bg-color: #444444 !important; 
+    background-color: var(--github-bg-color); 
 }

@@ -5,18 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Meyoube!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    
+    <!-- Materialize libarry -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Font Awesome library-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS reset file -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- main.css file-->
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
+
 </head>
 <body>
-    <div id="outermost_container" class="light-blue">
-        <button id="login">Login</button>
-        <button id="facebook_signin">Facebook</button>
-        <button id="email_signin">Email</button>
+    <div class="container">
+        <h1 class="title">MeYouBe</h1>
+        <div class="row">
+                <button id="login" class="col s12 button btn-small deep-purple">Login now</button>
+        </div>
+
+        <div class="row">
+                <a class="button btn-small col s12 social facebook facebook_button">
+                    <i class="fa fa-facebook"></i>
+                    Sign up with facebook
+                </a>
+        </div>
+        <div class="row">
+                <a class="button btn-small col s12 social github email_button" id="email_signin">
+                    
+                    Sign up with Email
+                </a>
+        </div>
     </div>
+
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="./assets/js/index.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
