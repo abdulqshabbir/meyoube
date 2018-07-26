@@ -15,7 +15,7 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/abdulqshabbir/meyoube/issues"
-  },
+  },  
   "homepage": "https://github.com/abdulqshabbir/meyoube#readme",
   "devDependencies": {
     "lite-server": "^1.3.1"
