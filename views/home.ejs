@@ -1,0 +1,32 @@
+<% include ./partials/header.ejs %>
+
+    <div class="container">
+        <h1 class="title">MeYouBe</h1>
+        <div class="row">
+            <a href="/user/new">
+                <button id="signup" class="col s12 button btn-small deep-purple" id="signup_button">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                    Sign up!
+                </button>
+            </a>
+        </div>
+        <div class="row">
+                <a class="button btn-small col s12 social facebook facebook_button" id= "facebook_button">
+                    <i class="fa fa-facebook"></i>
+                    Facebook Signup
+                    
+                    <!--<button id="facebook_signin">Facebook</button>-->
+                </a>
+        </div>
+        <div class="row">
+                <a class="button btn-small col s12 social github email_button" id="email_signin">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    Email Signup
+                </a>
+        </div>
+    <script src="./assets/js/facebook.js"></script>
+    </div>
+
+<% include ./partials/footer.ejs %>
+
+

@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    max-width: 150px;
+    max-width: 300px;
     margin-top: 10%;
     font-family: "Segoe UI"; 
 }
@@ -53,4 +53,12 @@ body {
 .email_button:hover {
     --github-bg-color: #444444 !important; 
     background-color: var(--github-bg-color); 
+}
+
+a {
+    color: inherit
+}
+
+input {
+    text-decoration: black;
 }

@@ -1,0 +1,17 @@
+<% include ./partials/header.ejs %>
+
+    <div class="container">
+        <h1>Welcome to the Register Page!</h1>
+        <form action="/user/new" method="post">
+            Username: <br>
+            <input type="text" name="user[username]" placeholder="username">
+            Password: <br>
+            <input type="password" name="user[password]" placeholder="password">
+            Email: <br>
+            <input type="text" name="user[email]" placeholder="email">
+            <button class="btn btn-default" type="submit">Register</button>
+        </form>
+    </div>
+
+<% include ./partials/footer.ejs %>
+
