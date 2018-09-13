@@ -41,21 +41,15 @@ mongoose.connect(dbUrl,{useNewUrlParser: true},(err, db) => {
     })
 
     app.post('/user/new', (req, res) => {
-        console.log(req.body.user)
-        let username = req.body.user.username
-        let password = req.body.user.password
-        let email = req.body.user.email
-
         User.create(req.body.user, (err, newUser) =>{
             if(err) {
                 console.log(err)
             }
             else {
-                res.redirect('/user')
+                res.render('user', {user: req.body.user})
             }
         })
         console.log("you're posting!")
-        console.log(db)
     })
 
 })
